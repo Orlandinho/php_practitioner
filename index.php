@@ -1,8 +1,7 @@
 <?php
 
-$query = require 'bootstrap.php';
-require 'Task.php';
+$query = require 'core/bootstrap.php';
 
-$tasks = $query->selectAll('todos');
+$router = new Router();
 
-require 'template.php';
+require Router::load('routes.php')->direct(Request::uri());

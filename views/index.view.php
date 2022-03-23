@@ -15,6 +15,12 @@
 </head>
 <body>
 <header>
+    <nav>
+        <ul>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
     <h1>Task for the Day</h1>
 </header>
 <div>
