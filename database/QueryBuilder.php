@@ -3,10 +3,9 @@ declare(strict_types=1);
 
 class QueryBuilder
 {
-    protected PDO $pdo;
-    public function __construct(PDO $pdo)
+//  constructor property promotion
+    public function __construct(protected PDO $pdo)
     {
-        $this->pdo = $pdo;
     }
     public function selectAll(string $table)
     {
