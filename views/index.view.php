@@ -1,29 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP Basics</title>
-    <style>
-        header {
-            background: #e3e3e3;
-            padding: 3em;
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-<header>
-    <nav>
-        <ul>
-            <li><a href="/about">About</a></li>
-            <li><a href="/contact">Contact</a></li>
-        </ul>
-    </nav>
-    <h1>Task for the Day</h1>
-</header>
+<?php require('partials/head.php'); ?>
 <div>
+    <h1>Tasks for the Day</h1>
     <ul>
         <?php foreach($tasks as $task) : ?>
             <li><strong>Description: </strong>
@@ -36,5 +13,13 @@
         <?php endforeach; ?>
     </ul>
 </div>
-</body>
-</html>
+<div>
+    <form action="/names" method="post">
+        <h1>Enter your e-mail</h1>
+
+        <input name="name" type="text">
+
+        <button type="submit">Save</button>
+    </form>
+</div>
+<?php require('partials/footer.php');
