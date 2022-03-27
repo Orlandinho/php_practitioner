@@ -15,7 +15,7 @@
 </div>
 <div>
     <form action="/names" method="post">
-        <h1>Enter your e-mail</h1>
+        <h1>Enter your name</h1>
 
         <input name="name" type="text">
 
