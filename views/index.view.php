@@ -14,10 +14,10 @@
     </ul>
 </div>
 <div>
-    <form action="/names" method="post">
-        <h1>Enter your name</h1>
+    <form action="/tasks" method="post">
+        <h1>Enter a new task</h1>
 
-        <input name="name" type="text">
+        <input name="description" type="text">
 
         <button type="submit">Save</button>
     </form>
