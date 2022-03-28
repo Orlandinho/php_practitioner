@@ -1,5 +1,9 @@
 <?php
 
+namespace App\Controllers;
+
+use App\Core\App;
+
 class PagesController
 {
     public function index()
@@ -18,7 +22,7 @@ class PagesController
             'completed' => 0
         ]);
 
-        return redirect('');
+        return redirect('tasks');
     }
 
     public function home()
